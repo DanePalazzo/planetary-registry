@@ -7,11 +7,10 @@ function PlanetList({planets, search}) {
         let allFields = planet.name + planet.climate + planet.terrain + planet.population
         return allFields.toLowerCase().includes(search.toLowerCase())
         })
-    console.log(filteredPlanets)
 
     // const mapPlanets = (()=>{
     //     return planets.map((planet) => <Planet key={planet.id} planet={planet}/>)
-    // })
+    // }) 
 
     const mapPlanets = filteredPlanets.map((planet)=> <Planet key ={planet.id} planet={planet}/>)
 
