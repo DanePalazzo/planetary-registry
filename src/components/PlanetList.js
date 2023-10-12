@@ -4,7 +4,8 @@ import Planet from "./Planet"
 function PlanetList({planets, search}) {
     
     const filteredPlanets = planets.filter((planet) => {
-        return planet.name.toLowerCase().includes(search.toLowerCase())
+        let allFields = planet.name + planet.climate + planet.terrain + planet.population
+        return allFields.toLowerCase().includes(search.toLowerCase())
         })
     console.log(filteredPlanets)
 
