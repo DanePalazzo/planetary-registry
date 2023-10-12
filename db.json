@@ -1210,6 +1210,34 @@
       "climate": "cold",
       "terrain": "rocky",
       "population": "1"
+    },
+    {
+      "name": "New Planet",
+      "climate": "Arid",
+      "terrain": "Desert",
+      "population": "420",
+      "id": 61
+    },
+    {
+      "name": "New Planet2",
+      "climate": "Tropical",
+      "terrain": "Forests",
+      "population": "420",
+      "id": 62
+    },
+    {
+      "name": "New Planet3",
+      "climate": "Arid",
+      "terrain": "Desert",
+      "population": "420",
+      "id": 63
+    },
+    {
+      "name": "New Planet4",
+      "climate": "Tundra",
+      "terrain": "Mountains",
+      "population": "9999999",
+      "id": 64
     }
   ]
 }

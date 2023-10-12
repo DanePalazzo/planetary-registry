@@ -1,7 +1,19 @@
-import React from "react"
+import React, { useState } from "react"
 import Planet from "./Planet"
 
-function PlanetList() {
+function PlanetList({planets, search}) {
+    
+    const filteredPlanets = planets.filter((planet) => {
+        return planet.name.toLowerCase().includes(search.toLowerCase())
+        })
+    console.log(filteredPlanets)
+
+    // const mapPlanets = (()=>{
+    //     return planets.map((planet) => <Planet key={planet.id} planet={planet}/>)
+    // })
+
+    const mapPlanets = filteredPlanets.map((planet)=> <Planet key ={planet.id} planet={planet}/>)
+
     return(
         <table>
             <tbody>
@@ -11,7 +23,7 @@ function PlanetList() {
                     <th>Terrain</th>
                     <th>Population</th>
                 </tr>
-                {/** Render a list of <Planet> components here. */}
+                {mapPlanets}
             </tbody>
         </table>
     );
